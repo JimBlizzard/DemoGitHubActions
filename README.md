@@ -19,6 +19,6 @@ The time wew greeted you.
 
 ## Example usage
 
-uses: actions/DemoGitHubActions@v1
+uses: JimBlizzard/DemoGitHubActions@v1
 with:
     who-to-greet: 'Mona the Octocat'

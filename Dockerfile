@@ -4,8 +4,8 @@ FROM alpine:3.10
 # Copy my code file from my action repo to the filesystem path '/' of the container
 COPY entrypoint.sh /entrypoint.sh
 
-# Nope, don't want the CHMOD here. 
-# RUN chmod +x /docker-entrypoint.sh
+# change the entrypoint to executable inside the container
+RUN chmod +x /entrypoint.sh
 
 # Code file to execute when the docker container starts up ('entrypoint.sh')
 ENTRYPOINT ["/entrypoint.sh"]

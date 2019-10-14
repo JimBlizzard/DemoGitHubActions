@@ -14,3 +14,6 @@ jobs:
       uses: JimBlizzard/DemoGitHubActions@v1
       with:
         who-go-greet: 'Mona the Octocat'
+    # Use the output from the 'hello' step
+    - name: Get the output time
+      run: echo "The time was ${{ steps.hello.outputs.time }}""

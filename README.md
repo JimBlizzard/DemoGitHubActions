@@ -42,3 +42,5 @@ I just found this tip here <https://forums.docker.com/t/standard-init-linux-go-1
         I had to run dos2unix on the entrypoint script. Wish the error message was more descriptive.
 
 Looks like crlf on DOS / Linux wasn't appropriate. Giving it a try now.
+
+## Yes, that was the fix for the entrypoint.sh file. Had to run dos2unix
